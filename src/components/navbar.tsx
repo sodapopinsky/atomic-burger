@@ -3,11 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import {
   NavigationMenu,
-  
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  
 } from "@/components/ui/navigation-menu";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -17,7 +15,7 @@ const Navbar = () => {
   const navItems = [
     { name: "MENU", href: "#menu" },
     { name: "GIFT CARDS", href: "https://order.toasttab.com/online/atomic-burger-veterans?diningOption=takeout" },
-    { name: "FUNDRAISERS", href: "#fundraisers" },
+    // { name: "FUNDRAISERS", href: "#fundraisers" },
   ];
 
   return (
@@ -26,22 +24,32 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/images/horizontal-logo.svg"
-              alt="Atomic Burger Logo"
-              width={280}
-              height={50}
-            />
+            <div className="hidden min-[540px]:block">
+              <Image
+                src="/images/horizontal-logo.svg"
+                alt="Atomic Burger Logo"
+                width={280}
+                height={50}
+              />
+            </div>
+            <div className="min-[540px]:hidden">
+              <Image
+                src="/images/circle-logo.svg"
+                alt="Atomic Burger Logo"
+                width={50}
+                height={50}
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-6"> {/* Changed from md to lg */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-6">
             <NavigationMenu>
-              <NavigationMenuList className="whitespace-nowrap"> {/* Added whitespace-nowrap */}
+              <NavigationMenuList className="whitespace-nowrap">
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.name}>
-                    <Link href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium px-2 py-2"> {/* Reduced padding */}
+                    <Link target="_blank" href={item.href} legacyBehavior passHref>
+                      <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium px-2 py-2">
                         {item.name}
                       </NavigationMenuLink>
                     </Link>
@@ -56,14 +64,24 @@ const Navbar = () => {
               rel="noopener noreferrer">
               <Button
                 variant="default"
-                className="bg-black hover:bg-gray-800 text-white rounded-full">
+                className="bg-[#353C3d] text-white rounded-full">
                 ORDER ONLINE
               </Button>
             </Link>
           </div>
 
-          {/* Mobile Navigation */}
-          <div className="lg:hidden"> {/* Changed from md to lg */}
+          {/* Mobile Navigation - Order Button and Menu */}
+          <div className="lg:hidden flex items-center space-x-4">
+            <Link
+              href="https://order.toasttab.com/online/locations/0923b028-58c3-4589-850d-52099c1442c9#!/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button
+                variant="default"
+                className="bg-[#353C3d] text-white rounded-full">
+                ORDER ONLINE
+              </Button>
+            </Link>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
@@ -71,24 +89,17 @@ const Navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent>
-                <SheetTitle className="text-left">Menu</SheetTitle> {/* Added SheetTitle */}
+                <SheetTitle className="text-left">Menu</SheetTitle>
                 <div className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item) => (
                     <Link
                       key={item.name}
+                      target="_blank"
                       href={item.href}
                       className="text-lg font-medium text-gray-700 hover:text-gray-900">
                       {item.name}
                     </Link>
                   ))}
-                  <Link
-                    href="https://order.toasttab.com/online/locations/0923b028-58c3-4589-850d-52099c1442c9#!/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <Button className="w-full bg-black hover:bg-gray-800 text-white rounded-full mt-4">
-                      ORDER ONLINE
-                    </Button>
-                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
