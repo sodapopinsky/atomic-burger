@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 
 export default {
     darkMode: ["class"],
@@ -8,6 +10,11 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	screens: {
+		'xs': '480px',
+		// Spread the default breakpoints after your custom one
+		...defaultTheme.screens,
+	  },
   	extend: {
 		fontFamily: {
 			sans: ['Jost', 'sans-serif'],
