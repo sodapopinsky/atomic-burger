@@ -19,6 +19,7 @@ import React, {
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([])
   
     const onDotButtonClick = useCallback(
+        
       (index: number) => {
         if (!emblaApi) return
         emblaApi.scrollTo(index)
