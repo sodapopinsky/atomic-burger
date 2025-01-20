@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface MenuItemProps {
   photoPath: string;
@@ -11,10 +12,13 @@ const MenuItem: React.FC<MenuItemProps> = ({ photoPath, itemName, description })
     <div className="w-full rounded-lg border border-gray-300 bg-white overflow-hidden sm:max-w-sm">
       <div className="flex flex-col">
         <div className="w-full h-64 sm:h-64 relative bg-gray-200">
-          <img
+          <Image
             src={photoPath}
             alt={itemName}
-            className="w-full h-full object-cover"
+            fill
+            sizes="(min-width: 640px) 384px, 100vw"
+            className="object-cover"
+            priority={false}
           />
         </div>
         <div className="p-4 text-left w-full">

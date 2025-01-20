@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  
 } from "@/components/ui/navigation-menu";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -16,7 +16,7 @@ import Image from "next/image";
 const Navbar = () => {
   const navItems = [
     { name: "MENU", href: "#menu" },
-    { name: "GIFT CARDS", href: "#gift-cards" },
+    { name: "GIFT CARDS", href: "https://order.toasttab.com/online/atomic-burger-veterans?diningOption=takeout" },
     { name: "FUNDRAISERS", href: "#fundraisers" },
   ];
 
