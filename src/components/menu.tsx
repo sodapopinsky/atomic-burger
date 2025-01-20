@@ -177,7 +177,7 @@ const menuData: MenuSection[] = [
   ];
 const Menu = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container px-4 py-8">
       {menuData.map((section, index) => (
         <section key={index} className="mb-12">
           <h2 className="text-3xl font-bold mb-2">{section.title}</h2>

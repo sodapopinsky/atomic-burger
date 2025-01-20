@@ -23,7 +23,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ photoPath, itemName, description })
         </div>
         <div className="p-4 text-left w-full">
           <h2 className="text-2xl font-bold mb-2">{itemName}</h2>
-          <p className="text-gray-700">{description}</p>
+          <p className="text-gray-700 line-clamp-2">{description}</p>
         </div>
       </div>
     </div>
