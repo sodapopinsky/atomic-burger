@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import HeroSection from '@/components/HeroSection'
 
 import Menu from "@/components/menu";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         {/* Your main content will go here */}
         <Menu />
       </div>
+      <Footer />
     </main>
   );
 }

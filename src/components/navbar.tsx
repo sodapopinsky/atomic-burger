@@ -49,7 +49,7 @@ const Navbar = () => {
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.name}>
                     <Link target="_blank" href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium px-2 py-2">
+                      <NavigationMenuLink className="text-[#525A61] hover:text-gray-900 font-medium px-2 py-2">
                         {item.name}
                       </NavigationMenuLink>
                     </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
               rel="noopener noreferrer">
               <Button
                 variant="default"
-                className="bg-[#353C3d] text-white rounded-full">
+                className="border-[#525A61] border bg-white text-[#525A61] rounded-full p-5 font-bold">
                 ORDER ONLINE
               </Button>
             </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
               rel="noopener noreferrer">
               <Button
                 variant="default"
-                className="bg-[#353C3d] text-white rounded-full">
+                className="bg-[#] text-white rounded-full">
                 ORDER ONLINE
               </Button>
             </Link>
