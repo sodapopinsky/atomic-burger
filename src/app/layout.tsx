@@ -1,9 +1,10 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-
 import { Jost } from 'next/font/google'
 import "./globals.css";
-
-
+import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster"
 const jost = Jost({ 
   subsets: ['latin'],
   display: 'swap',
@@ -12,6 +13,15 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Atomic Burger",
   description: "Atomic Burger is a fast casual restaurant chain that specializes in gourmet burgers, milkshakes, and fries.",
+  icons: {
+    icon: [
+      { url: '/favicons/icon.png', type: 'image/png' },
+      { url: '/favicons/favicon.ico' }
+    ],
+    apple: [
+      { url: '/favicons/apple-icon.png' }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -21,7 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={jost.className}>
+        <main className="min-h-screen">
+          <Navbar />
+          {children}
+          <Toaster />
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }

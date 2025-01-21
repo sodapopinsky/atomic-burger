@@ -16,7 +16,7 @@ interface MenuSection {
 const menuData: MenuSection[] = [
     {
       title: "Burgers & More",
-      description: "Premium burgers and sandwiches made with the finest ingredients",
+      description: "Proprietary meat blend, house ground daily",
       items: [
         {
           photoPath: "/images/menu-items/atomic-burger.png",
@@ -175,28 +175,30 @@ const menuData: MenuSection[] = [
     ]
 }
   ];
-const Menu = () => {
-  return (
-    <div className="container px-4 py-8">
-      {menuData.map((section, index) => (
-        <section key={index} className="mb-12">
-          <h2 className="text-3xl font-bold mb-2">{section.title}</h2>
-          <p className="text-gray-600 mb-6">{section.description}</p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {section.items.map((item, itemIndex) => (
-              <MenuItem
-                key={itemIndex}
-                photoPath={item.photoPath}
-                itemName={item.itemName}
-                description={item.description}
-              />
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
-  );
-};
-
-export default Menu;
+  const Menu = () => {
+    return (
+   
+      <div className="w-full px-4 py-8"> 
+        {menuData.map((section, index) => (
+          <section key={index} className="mb-12">
+            <div className="text-2xl font-bold mb-2">{section.title}</div>
+            <p className="text-atomic-text-100 mb-6 text-[17px] font-medium">{section.description}</p>
+            
+            {/* Changed grid columns to auto-fill with a min width to fill space fully */}
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 w-full">
+              {section.items.map((item, itemIndex) => (
+                <MenuItem
+                  key={itemIndex}
+                  photoPath={item.photoPath}
+                  itemName={item.itemName}
+                  description={item.description}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    );
+  };
+  
+  export default Menu;

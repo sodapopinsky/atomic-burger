@@ -36,7 +36,7 @@ const EmblaCarousel: React.FC<PropType> = () => {
                 THE CREAM OF THE CROP
               </div>
               <div className="text-base  md:text-xl lg:text-2xl ">
-                (It&apos;s ok to be starstruck)
+                (It&apos;s OK to  stare)
               </div>
             </div> 
           </div>
