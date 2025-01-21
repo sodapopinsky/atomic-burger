@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Divider */}
-          <div className="mx-auto w-[400px] h-[3px] bg-atomic-mustard mb-8"></div>
+          <div className="mx-auto w-[200px] h-[3px] bg-atomic-mustard mb-8"></div>
 
           {/* Connect With Us section */}
           <div className="text-center">
