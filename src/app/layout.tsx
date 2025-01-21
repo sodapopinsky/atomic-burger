@@ -23,21 +23,22 @@ export const metadata: Metadata = {
     ]
   }
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-      <body className={`${jost.className} overflow-x-hidden`}>
-        <main className="min-h-screen relative w-full">
-          <Navbar />
-          {children}
-          <Toaster />
-          <Footer />
-        </main>
+    <html lang="en">
+      <body className={`${jost.className} relative`}>
+        <div className="overflow-x-hidden">
+          <main className="min-h-screen relative w-full">
+            <Navbar />
+            {children}
+            <Toaster />
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );
