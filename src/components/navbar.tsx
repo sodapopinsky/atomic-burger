@@ -78,7 +78,7 @@ const Navbar = () => {
               rel="noopener noreferrer">
               <Button
                 variant="default"
-                className="bg-[#] text-white rounded-full">
+                className="border-[#525A61] border bg-white text-[#525A61] rounded-full p-5 font-bold">
                 ORDER ONLINE
               </Button>
             </Link>
