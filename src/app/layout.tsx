@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={jost.className}>
-        <main className="min-h-screen">
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${jost.className} overflow-x-hidden`}>
+        <main className="min-h-screen relative w-full">
           <Navbar />
           {children}
           <Toaster />
