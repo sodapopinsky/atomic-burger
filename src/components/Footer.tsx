@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="max-w-2xl mx-auto px-4 text-[#525A61]">
           <h2 className="text-4xl font-bold  mb-4">Join the team</h2>
           <p className="mb-6">
-            Are you passionate about good food? Do you enjoy serving people? Atomic Burger may be a great fit, and we've got two easy ways for you to apply today!
+            Are you passionate about good food? Do you enjoy serving people? Atomic Burger may be a great fit, and we&apos;ve got two easy ways for you to apply today!
           </p>
           <Link href="https://atomic-burger.r365hire.com/account">
             <Button variant="outline" className="bg-[#9FDED8] border-[#CD4327] border text-[#CD4327] hover:bg-gray-100">
