@@ -31,11 +31,11 @@ const EmblaCarousel: React.FC<PropType> = () => {
                 alt="Your alt text"
               />
             </div>
-           <div className="absolute bottom-0 left-0 right-0 h-[35%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
-              <div className="text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight ">
+           <div className="absolute bottom-0 left-0 right-0 h-[30%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
+              <div className="text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight ">
                 THE CREAM OF THE CROP
               </div>
-              <div className="text-base  md:text-xl lg:text-2xl ">
+              <div className="text-lg  md:text-xl lg:text-2xl ">
                 (It&apos;s OK to  stare)
               </div>
             </div> 
@@ -50,11 +50,11 @@ const EmblaCarousel: React.FC<PropType> = () => {
               /> 
              
             </div>
-             <div className="absolute bottom-0 left-0 right-0 h-[35%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
-              <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+             <div className="absolute bottom-0 left-0 right-0 h-[30%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
+             <div className="text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight ">
                 LOOKING FOR A NEW HABIT?
               </div>
-              <div className="text-base  md:text-xl lg:text-2xl ">
+              <div className="text-lg  md:text-xl lg:text-2xl  ">
               Try our turkey burger & edamame
               </div>
             </div> 
