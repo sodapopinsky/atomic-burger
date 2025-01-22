@@ -18,21 +18,21 @@ const EmblaCarousel: React.FC<PropType> = () => {
     <section className="embla  w-[100%]">
       <div className="embla__viewport " ref={emblaRef}>
         <div className="embla__container  ">
-          <div className="embla__slide bg-[#9FDED8] h-[200px]  md:h-[300px] lg:h-[350px]" key="slide1">
-            <div className="flex max-w-7xl mx-auto    h-[200px]  md:h-[300px] lg:h-[350px] justify-center items-center">
+          <div className="embla__slide bg-[#9FDED8] h-[300px]  lg:h-[350px]" key="slide1">
+            <div className="flex max-w-7xl mx-auto    h-[300px]   lg:h-[350px] justify-center items-center">
               <img
-                className="h-[90%] w-auto object-contain block xs:hidden  translate-y-[-10px]"
-                src="images/shakes.png"
+                className="h-[80%] w-auto object-contain block xs:hidden  translate-y-[-10px]"
+                src="images/hero-carousel/shakes-3.png"
                 alt="Your alt text"
               />
                <img
-                className="h-[90%] w-auto object-contain hidden xs:block  translate-y-[-15px]"
-                src="images/shakes-7.png"
+                className="h-[85%] w-auto object-contain hidden xs:block  translate-y-[-20px]"
+                src="images/hero-carousel/shakes-7.png"
                 alt="Your alt text"
               />
             </div>
            <div className="absolute bottom-0 left-0 right-0 h-[35%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
-              <div className="text-xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-tight ">
+              <div className="text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight ">
                 THE CREAM OF THE CROP
               </div>
               <div className="text-base  md:text-xl lg:text-2xl ">
@@ -41,17 +41,17 @@ const EmblaCarousel: React.FC<PropType> = () => {
             </div> 
           </div>
 
-          <div className="embla__slide bg-[#CDDC39] h-[200px]  md:h-[300px] lg:h-[350px]" key="slide2">
-            <div className="flex max-w-7xl mx-auto   h-[200px]  md:h-[350px] lg:h-[300px]  justify-center items-center">
+          <div className="embla__slide bg-[#CDDC39] h-[300px]  lg:h-[350px]" key="slide2">
+            <div className="flex max-w-7xl mx-auto   h-[300px] lg:h-[350px]  justify-center items-center ">
             <img
-                className="h-[90%] xs:h-[80%] md:h-[70%] lg:h-[90%] w-auto object-contain translate-y-[-10px]  md:translate-y-[-30px] lg:translate-y-[5px]"
-                src="images/turkey.png"
+                className="h-[85%]  w-auto object-cover "
+                src="images/hero-carousel/turkey.png"
                 alt="Your alt text"
               /> 
              
             </div>
              <div className="absolute bottom-0 left-0 right-0 h-[35%]  bg-black bg-opacity-40 flex items-center text-center backdrop-blur-sm flex-col justify-center text-white space-y-0 lg:space-y-1">
-              <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight ">
+              <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 LOOKING FOR A NEW HABIT?
               </div>
               <div className="text-base  md:text-xl lg:text-2xl ">
