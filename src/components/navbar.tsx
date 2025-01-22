@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "MENU", href: "/" }, // Changed href to "/"
-  
+
     { name: "CONTACT US", href: "/contact" },
     // { name: "FUNDRAISERS", href: "#fundraisers" },
   ];
@@ -74,21 +74,19 @@ const Navbar = () => {
                     </Link>
                   </NavigationMenuItem>
                 ))}
-                
               </NavigationMenuList>
             </NavigationMenu>
             <Link
-              href="https://order.toasttab.com/online/atomic-burger-veterans?diningOption=takeout"
+              href="https://www.toasttab.com/atomic-burger-baton-rouge/giftcards?utm_source=undefined&utm_content=online--atomic-burger-baton-rouge&utm_medium=toast_sites&utm_campaign=giftcards"
               className="flex-shrink-0"
               target="_blank"
               rel="noopener noreferrer">
-            <Button
-  variant="outline"
-  className="border-atomic-mustard bg-white text-atomic-red rounded-full p-5 font-bold
-             hover:bg-white hover:text-atomic-red hover:opacity-90 hover:scale-105 transition-all duration-200"
->
-  GIFT CARDS
-</Button>
+              <Button
+                variant="outline"
+                className="border-atomic-mustard bg-white text-atomic-red rounded-full p-5 font-bold
+             hover:bg-white hover:text-atomic-red hover:opacity-90 hover:scale-105 transition-all duration-200">
+                GIFT CARDS
+              </Button>
             </Link>
 
             <Link
@@ -96,13 +94,12 @@ const Navbar = () => {
               className="flex-shrink-0"
               target="_blank"
               rel="noopener noreferrer">
-            <Button
-  variant="outline"
-  className="bg-atomic-red border text-white rounded-full p-5 font-bold
-             hover:bg-atomic-red hover:text-white hover:opacity-90 hover:scale-105 transition-all duration-200"
->
-  ORDER NOW
-</Button>
+              <Button
+                variant="outline"
+                className="bg-atomic-red border text-white rounded-full p-5 font-bold
+             hover:bg-atomic-red hover:text-white hover:opacity-90 hover:scale-105 transition-all duration-200">
+                ORDER NOW
+              </Button>
             </Link>
           </div>
 
@@ -112,20 +109,19 @@ const Navbar = () => {
               href="https://order.toasttab.com/online/locations/0923b028-58c3-4589-850d-52099c1442c9#!/"
               target="_blank"
               rel="noopener noreferrer">
-          <Button
-  variant="outline"
-  className="bg-atomic-red border text-white rounded-full p-5 font-bold
-             hover:bg-atomic-red hover:text-white hover:opacity-90 hover:scale-105 transition-all duration-200"
->
-  ORDER NOW
-</Button>
+              <Button
+                variant="outline"
+                className="bg-atomic-red border text-white rounded-full p-5 font-bold
+             hover:bg-atomic-red hover:text-white hover:opacity-90 hover:scale-105 transition-all duration-200">
+                ORDER NOW
+              </Button>
             </Link>
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
+            <SheetTrigger asChild>
+  <div className="cursor-pointer p-2">
+    <Menu className="h-7 w-7" />
+  </div>
+</SheetTrigger>
               <SheetContent>
                 <SheetTitle className="text-left">Atomic Burger</SheetTitle>
                 <div className="flex flex-col space-y-4 mt-8">
@@ -141,15 +137,14 @@ const Navbar = () => {
                       {item.name}
                     </Link>
                   ))}
-                    <Link
-                      key="gift-cards"
-                        href="https://order.toasttab.com/online/atomic-burger-veterans?diningOption=takeout"
-                      target="_blank"
-                      onClick={handleMobileNavClick}
-                      className="text-lg font-medium text-gray-700 hover:text-gray-900">
-                      GIFT CARDS
-                    </Link>
-
+                  <Link
+                    key="gift-cards"
+                    href="https://www.toasttab.com/atomic-burger-baton-rouge/giftcards?utm_source=undefined&utm_content=online--atomic-burger-baton-rouge&utm_medium=toast_sites&utm_campaign=giftcards"
+                    target="_blank"
+                    onClick={handleMobileNavClick}
+                    className="text-lg font-medium text-gray-700 hover:text-gray-900">
+                    GIFT CARDS
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>

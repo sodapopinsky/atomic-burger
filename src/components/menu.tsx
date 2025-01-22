@@ -16,7 +16,7 @@ interface MenuSection {
 const menuData: MenuSection[] = [
     {
       title: "Burgers & More",
-      description: "Proprietary meat blend, house ground daily",
+      description: "Our custom beef blend, house ground, hand pattied, and cooked to order",
       items: [
         {
           photoPath: "/images/menu-items/atomic-burger.png",
@@ -76,76 +76,29 @@ const menuData: MenuSection[] = [
         }
       ]
     },
-    {
-      title: "Sides",
-      description: "Perfect mini burgers for any appetite",
-      items: [
-        {
-          photoPath: "/images/menu-items/french-fries.png",
-          itemName: "French Fries",
-          description: "Seasoned with a dash of salt, and served with your choice of sauce."
-        },
-        {
-          photoPath: "/images/menu-items/edamame.png",
-          itemName: "Edamame",
-          description: "Freshly cooked soybeans seasoned with a dash of salt."
-        },
-       
-    
-      ]
-    },
-    {
-      title: "Shakes",
-      description: "Hand-spun premium shakes made with real ice cream",
-      items: [
-        {
-          photoPath: "/images/menu-items/chocolate.png",
-          itemName: "Chocolate",
-          description: "Classic chocolate shake made with premium chocolate ice cream"
-        },
-        {
-          photoPath: "/images/menu-items/vanilla.png",
-          itemName: "Vanilla",
-          description: "Classic vanilla shake made with premium vanilla ice cream"
-        },
-        {
-          photoPath: "/images/menu-items/cookies-n-creme.png",
-          itemName: "Cookies N Creme",
-          description: "Vanilla shake blended with crushed chocolate cookie pieces"
-        },
+
+  
+  {
+    title: "Sides",
+    description: "The perfect accomplice to your meal",
+    items: [
+      {
+        photoPath: "/images/menu-items/french-fries.png",
+        itemName: "French Fries",
+        description: "Crispy thrice-cooked fries, served with your choice of sauce."
+      },
+      {
+        photoPath: "/images/menu-items/edamame.png",
+        itemName: "Edamame",
+        description: "Freshly cooked soybeans seasoned with a dash of salt."
+      },
      
-      
-        {
-          photoPath: "/images/menu-items/mint-chip.png",
-          itemName: "Mint Chocolate Chip",
-          description: "Cool mint ice cream blended with chocolate chips"
-        },
-        {
-          photoPath: "/images/menu-items/nutella-marshmallow.png",
-          itemName: "Nutella Marshmallow",
-          description: "Creamy Nutella shake topped with marshmallow cream"
-        },
-        {
-          photoPath: "/images/menu-items/peanut-butter-chocolate-chip.png",
-          itemName: "Peanut Butter Chocolate Chip",
-          description: "Rich peanut butter shake with chocolate chips throughout"
-        },
-        {
-          photoPath: "/images/menu-items/salted-caramel.png",
-          itemName: "Salted Caramel",
-          description: "Sweet and salty caramel blended into a vanilla shake"
-        },
-        {
-          photoPath: "/images/menu-items/strawberry.png",
-          itemName: "Strawberry",
-          description: "Fresh strawberry puree blended with vanilla ice cream"
-        },
-     
-      ]
+  
+    ]
   },
   {
     title: "House Made Sauces",
-    description: "Crafted in-house daily to perfectly complement your meal",
+    description: "Crafted in-house daily to complement your fries",
     items: [
       {
         photoPath: "/images/menu-items/ab-sauce.png",
@@ -165,7 +118,7 @@ const menuData: MenuSection[] = [
       {
         photoPath: "/images/menu-items/sriracha-mayo.png",
         itemName: "Sriracha Mayo",
-        description: "Creamy mayo meets the perfect balance of garlic and chili heat"
+        description: "A smooth blend of mayo and sriracha with a touch of tangy heat"
       },
       {
         photoPath: "/images/menu-items/truffle-mayo.png",
@@ -173,7 +126,55 @@ const menuData: MenuSection[] = [
         description: "Luxurious mayo infused with black truffle and subtle herbs"
       }
     ]
-}
+},
+{
+  title: "Shakes",
+  description: "A major league lineup of flavors.  Choose carefully -- or don't, they're re all delicious",
+  items: [
+    {
+      photoPath: "/images/menu-items/chocolate.png",
+      itemName: "Chocolate",
+      description: "Classic chocolate shake made with rich Ghirardelli cocoa"
+    },
+    {
+      photoPath: "/images/menu-items/vanilla.png",
+      itemName: "Vanilla",
+      description: "Classic vanilla shake made with premium ice cream"
+    },
+    {
+      photoPath: "/images/menu-items/cookies-n-creme.png",
+      itemName: "Cookies N Creme",
+      description: "Our house shake blended with crushed chocolate cookie pieces"
+    },
+ 
+    {
+      photoPath: "/images/menu-items/mint-chip.png",
+      itemName: "Mint Chocolate Chip",
+      description: "Cool mint ice cream blended with chocolate chip pieces"
+    },
+    {
+      photoPath: "/images/menu-items/nutella-marshmallow.png",
+      itemName: "Nutella Marshmallow",
+      description: "Creamy Nutella shake topped with torched, gooey marshmallows"
+    },
+    {
+      photoPath: "/images/menu-items/peanut-butter-chocolate-chip.png",
+      itemName: "Peanut Butter Chocolate Chip",
+      description: "Rich peanut butter shake with chocolate chips throughout"
+    },
+    {
+      photoPath: "/images/menu-items/salted-caramel.png",
+      itemName: "Salted Caramel",
+      description: "Sweet and salty caramel topped with Kosher salt"
+    },
+    {
+      photoPath: "/images/menu-items/strawberry.png",
+      itemName: "Strawberry",
+      description: "Fresh strawberry pie blended with our house ice cream"
+    },
+ 
+  ]
+},
   ];
   const Menu = () => {
     return (
